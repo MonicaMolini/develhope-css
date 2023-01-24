@@ -1,0 +1,60 @@
+.container {
+  width: 280px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 45px 45px repeat(4, 50px);
+  border: 0.1px solid rgb(171, 171, 171);
+  border-radius: 10px;
+  font-family: sans-serif;
+  box-shadow: 1px 2px 10px rgba(128, 128, 128, 0.296);
+}
+
+.container > div {
+  border-top: 1px solid rgb(123, 145, 162);
+  text-align: center;
+  font-size: 30px;
+  display: grid;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.number,
+.decimal,
+.reset {
+  background-color: rgb(235, 239, 242);
+  border-right: 2px solid rgb(123, 145, 162);
+}
+.number0 {
+  background-color: rgb(235, 239, 242);
+  border-bottom-left-radius: 10px;
+  border-right: 2px solid rgb(123, 145, 162);
+}
+
+.result {
+  border-radius: 10px 10px 0 0;
+  background-color: rgb(57, 67, 72);
+  grid-column: 1 / span 4;
+  color: white;
+  justify-items: end;
+  padding-right: 15px;
+}
+
+.operator {
+  background-color: rgb(202, 214, 222);
+  grid-row: 2;
+  border-right: 2px solid rgb(123, 145, 162);
+}
+
+.operator-divisor {
+  background-color: rgb(202, 214, 222);
+  grid-row: 2;
+}
+
+.equal {
+  background-color: rgb(254, 101, 110);
+  border-right: 0;
+  grid-row: 3 / span 4;
+  grid-column: 4;
+  border-bottom-right-radius: 10px;
+}
