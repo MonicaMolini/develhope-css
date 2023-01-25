@@ -1,0 +1,97 @@
+main{
+    display: flex;   
+    flex-direction: row; 
+    justify-content: center;         
+    gap: 50px;
+}
+
+.card_container{
+    display: flex;
+    flex-direction: column;
+    width: 300px;   
+    height: auto;
+    border-radius: 20px;   
+    background: linear-gradient(170deg, rgb(141, 141, 141) 0%, rgba(191,191,191,1) 35%, rgba(255,255,255,1) 100%);
+    box-shadow: 1px 1px 5px #888888;           
+}
+
+#nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;   
+    height: 50px; 
+}
+
+#user_img{
+    margin-left: 20px;
+    margin-right: 10px;
+    
+}
+
+.name{
+    margin-bottom: 0;
+    font-size: 16px;   
+}
+
+.date{
+    margin-top: 0;
+    color: rgba(255, 255, 255, 0.703);
+    font-weight: lighter;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+.icons{
+    padding-left: 20px;
+    padding-right: 5px;    
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;    
+
+}
+
+#menu{
+    margin-left: auto;
+    margin-right: 6px;
+}
+
+span{
+    font-weight: bold;
+}
+
+.description{
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+@media (max-width: 768px){
+    main{       
+        display: flex;        
+        justify-content: space-between;              
+        flex-wrap: wrap;                                
+        gap: 20px;        
+    }      
+    
+    
+}
+
+@media (max-width: 375px){
+    main{
+        display: flex;    
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
